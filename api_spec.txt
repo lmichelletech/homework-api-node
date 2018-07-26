@@ -1,0 +1,56 @@
+//Dog breed data
+//A Breeds
+{
+    'id': id,
+    'breedtype': 'breedtype',
+    'origin': 'origin',
+    'image': 'image',
+    'size': 'size'
+}
+
+{
+    'id': 1,
+    'breedtype': 'Akita',
+    'origin': 'Japan',
+    'image': 'http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_22906_akita-460x290.jpg',
+    'size': 'Large'
+}
+{
+    'id': 2,
+    'breedtype': 'Chihuahua',
+    'origin': 'Mexico',
+    'image': 'https://www.gettyimages.com/detail/photo/chihuahua-sniffing-food-studio-grey-high-res-stock-photography/164287802',
+    'size': 'Small'
+}
+
+
+//Spec
+'GET /breeds' : {
+    'desc': 'Returns all breeds',
+    'response' : '200 application/json',
+    'data' : [{}, {}]
+},
+
+'GET /breeds/:id' : {
+    'desc': 'Returns one breed by id',
+    'response' : '200 application/json',
+    'data' : [{}]
+},
+
+'POST /breeds' : {
+    'desc': 'create and return a new dog breed using the posted object as the breed',
+    'response' : '200 application/json',
+    'data' : [{}]
+},
+
+'PUT /breeds/:id' : {
+    'desc': 'update and return a matching breed with the posted update object',
+    'response': '200 application/json',
+    'data' : {}
+},
+
+'DELETE /breeds/:id' : {
+    'desc': 'delete and return matching breed',
+    'response': '200 application/json',
+    'data' : {}
+},
